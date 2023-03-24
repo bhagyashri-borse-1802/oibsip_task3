@@ -1,0 +1,124 @@
+body {
+   margin: 0%;
+   background-color: rgb(46, 1, 23);
+}
+
+/* Heading section */
+
+h1 {
+    margin-top: 0%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    color: white;
+    margin: 0%;
+}
+
+hr {
+    border-top: 1px solid ;
+    color: #5f6868;
+    border-bottom: none;
+    width:100%;
+    margin-top: 50px;
+}
+
+/* Container Section */
+
+.title {
+    background-color: rgb(246, 240, 240);
+    height: 50px;
+}
+
+.container {
+    margin: 0%;
+    padding: 0%;
+    max-width: 100%;
+}
+
+.enter {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.task {
+    text-align: center;
+}
+
+input {
+    background-color: rgb(233, 236, 239);
+    height: 50px;
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+}
+/* Save button*/
+button {
+    width: 100px;
+    margin-left: 50px ;
+}
+
+/* List Section */
+
+ul {
+    padding-left: 100px;
+    list-style-type: none;
+    counter-reset: taskCounter;
+}
+
+ul li {
+    color: rgb(244, 240, 240);
+    text-align: left;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    counter-increment: taskCounter;
+}
+
+ul li::before {
+    text-align: left;
+    display: inline-block;
+    width: 2rem;
+    content:counter(taskCounter);
+}
+
+li button {
+    font-size: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.btn1 {
+    color: green;
+}
+
+.btn2 {
+    color: red;
+}
+
+@media (max-width:1028px){
+    ul {
+        padding-left: 50px;
+    }
+    
+    ul li {
+        font-size: 1.1rem;
+    }
+    
+    ul li::before {
+        width: 1.5rem;
+    }
+    
+    li button {
+        font-size: 10px;
+    }
+}
+
+
